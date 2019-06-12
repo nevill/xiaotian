@@ -1,6 +1,6 @@
 {
   "name": "xiaotian",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A pd client on node.js",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,22 @@
     "node.js",
     "javascript"
   ],
+  "files": [
+    "lib",
+    "proto",
+    "*.js"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
   "author": "nevill <nevill.dutt@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/nevill/xiaotian#readme",
   "bugs": {
     "url": "https://github.com/nevill/xiaotian/issues"
   },
-  "homepage": "https://github.com/nevill/xiaotian#readme"
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.1",
+    "grpc": "^1.21.1"
+  }
 }
