@@ -9,6 +9,9 @@ let address = 'pd0:2379';
   console.log('Cluster ID:', id.toString());
 
   await client.put('company', 'PingCAP');
+
   let company = await client.get('company');
   console.log('Company:', company);
+
+  await client.delete('company');
 })();
